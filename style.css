@@ -1,0 +1,174 @@
+:root {
+    --dark-blue: #023047;
+    --green: #06D6A0;
+    --yellow: #FFD166;
+    --light-color: #F1FAEE;
+    --pink: #EF476F;
+}
+.pricing-table{
+    font-family: "Poppins",sans-serif;
+}
+.pricing-table .checkbox{
+    width: 250px;
+    background-color: var(--dark-blue);
+    height: 55px;
+    appearance: none;
+    border-radius: 24px;
+    cursor: pointer;
+    position: relative;
+}
+.pricing-table .chekbx
+{
+    position: relative;
+    color: white;
+    display: inline-block;
+}
+.pricing-table .chekbx .monthly{
+    position: absolute;
+    left: 36px;
+    top: 18px;
+    pointer-events: none;
+}
+.pricing-table .chekbx .yearly{
+     position: absolute;
+     right: 36px;
+     top: 18px;
+     pointer-events: none;
+}
+.pricing-table .checkbox::before{
+
+    content: "";
+    position: absolute;
+    height: 44px;
+    width: 120px;
+    border-radius: 24px;
+    background: var(--green);
+    top: 50%;
+    transform: translateY(-50%);
+    left: 6px;
+    transition: all 0.5s;
+}
+.pricing-table .checkbox:checked::before{
+    left: 138px;
+    width: 106px;
+}
+.pricing-table1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 32px;
+}
+.pricing-table .prcn-table-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pricing-table .prcn-table-header h2{
+    margin-right: 32px;
+    font-size: 24px;
+}
+.pricing-table1 .table{
+    background: var(--light-color);
+    width: 260px;
+    padding: 32px;
+    position: relative;
+}
+.pricing-table1 h3{
+    font-size: 24px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.pricing-table1 .price-container {
+    display: flex;
+    align-items: center;
+}
+.pricing-table1 .price-container .price {
+    font-size: 56px;
+    font-weight: bold;
+    padding-right: 16px;
+}
+.pricing-table1 .description {
+    font-size: 15px;
+    color: #222;
+}
+
+.pricing-table1 .features {
+    list-style: none;
+    padding: 0;
+}
+.pricing-table1 .features li {
+    margin: 24px 0;
+    display: flex;
+    align-items: center;
+}
+.pricing-table1 .features li::before {
+    content: url('images/Group.svg');
+    margin-right: 16px;
+    margin-top: 4px;
+}
+.pricing-table1 a.btn {
+    background: var(--dark-blue);
+    padding: 16px 0;
+    display: inline-block;
+    width: 100%;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 24px;
+    margin-top: 16px;
+    transition: all 400ms;
+}
+.pricing-table1 a.btn:hover {
+    background: #022435;
+}
+.pricing-table1 .table img.table-bg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+}
+.pricing-table1 .table .content {
+    z-index: 200;
+    position: relative;
+}
+.pricing-table1 .table.best-value {
+    background: var(--dark-blue);
+    color: #fff;
+    border-radius: 24px;
+    width: 280px;
+}
+.pricing-table1 .table.table.best-value .value {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding: 8px;
+    border-radius: 24px 24px 0 0;
+    background: var(--pink);
+    font-weight: bold;
+}
+.pricing-table1 .table.table.best-value .content {
+    padding-top: 32px;
+}
+
+.pricing-table1 .table.table.best-value .price {
+    font-size: 68px;
+}
+
+.pricing-table1 .table.table.best-value a.btn {
+    background: var(--yellow);
+    color: #000;
+    transition: all 400ms;
+}
+
+.pricing-table1 .table.table.best-value a.btn:hover {
+    background: #ffe4a4;
+} 
+
+.pricing-table1 .table.best-value .description {
+    color: #eee;
+}
